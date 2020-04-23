@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context="demo.xu.usbcanerademo.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="openVideo0"
+            android:onClick="openVideo0"
+            android:textAllCaps="false"
+            android:textSize="36sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="openVideo1"
+            android:onClick="openVideo1"
+            android:textAllCaps="false"
+            android:textSize="36sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="openVideo2"
+            android:textAllCaps="false"
+            android:onClick="openVideo2"
+            android:textSize="36sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="openVideo3"
+            android:onClick="openVideo3"
+            android:textAllCaps="false"
+            android:textSize="36sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="closeVideo0"
+            android:onClick="closeVideo0"
+            android:textAllCaps="false"
+            android:textSize="36sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="closeVideo1"
+            android:onClick="closeVideo1"
+            android:textAllCaps="false"
+            android:textSize="36sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="closeVideo2"
+            android:textAllCaps="false"
+            android:onClick="closeVideo2"
+            android:textSize="36sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="closeVideo3"
+            android:onClick="closeVideo3"
+            android:textAllCaps="false"
+            android:textSize="36sp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_imi"
+                android:layout_width="640dp"
+                android:layout_height="480dp" />
+
+
+            <ImageView
+                android:id="@+id/img_imi_ir"
+                android:layout_width="640dp"
+                android:layout_height="480dp" />
+
+            <ImageView
+                android:id="@+id/img_imi_depth"
+                android:layout_width="640dp"
+                android:layout_height="480dp" />
+
+            <TextView
+                android:id="@+id/sample_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello World!"
+                android:textSize="36sp" />
+
+
+            <android.opengl.GLSurfaceView
+                android:id="@+id/surfaceview"
+                android:layout_width="640dp"
+                android:layout_height="480dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
